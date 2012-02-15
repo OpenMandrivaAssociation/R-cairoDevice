@@ -4,7 +4,7 @@
 Name:             R-%{packname}
 Version:          2.18
 Release:          1
-Summary:          Cairo-based cross-platform antialiased graphics device driver.
+Summary:          Cairo-based cross-platform antialiased graphics device driver
 Group:            Sciences/Mathematics
 License:          GPL
 URL:              None
@@ -25,6 +25,8 @@ Cairo/GTK graphics device driver with output to screen, file (png, svg,
 pdf, and ps) or memory (arbitrary GdkDrawable or Cairo context). The
 screen device may be embedded into RGtk2 interfaces. Supports all
 interactive features of other graphics devices, including
+getGraphicsEvent().
+
 %prep
 %setup -q -c -n %{packname}
 
