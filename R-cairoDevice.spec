@@ -2,15 +2,15 @@
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
-Version:          2.18
-Release:          2
-Summary:          Cairo-based cross-platform antialiased graphics device driver
+Version:          2.19
+Release:          1
+Summary:          Cairo-based cross-platform antialiased graphics device driver.
 Group:            Sciences/Mathematics
 License:          GPL
-URL:              http://cran.r-project.org/web/packages/cairoDevice/index.html
-Source0:          http://cran.r-project.org/src/contrib/Archive/cairoDevice/cairoDevice_2.18.tar.gz
+URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
+Source0:          http://cran.r-project.org/src/contrib/%{packname}_%{version}.tar.gz
 Requires:         R-grDevices 
-BuildRequires:    R-devel texlive-collection-latex 
+BuildRequires:    R-devel Rmath-devel texlive-collection-latex 
 BuildRequires:    R-grDevices 
 BuildRequires:    cairo-devel
 BuildRequires:    glib2-devel
@@ -25,7 +25,6 @@ Cairo/GTK graphics device driver with output to screen, file (png, svg,
 pdf, and ps) or memory (arbitrary GdkDrawable or Cairo context). The
 screen device may be embedded into RGtk2 interfaces. Supports all
 interactive features of other graphics devices, including
-getGraphicsEvent().
 
 %prep
 %setup -q -c -n %{packname}
