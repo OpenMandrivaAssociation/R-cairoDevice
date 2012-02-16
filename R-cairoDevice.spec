@@ -15,10 +15,12 @@ Requires:         R-grDevices
 
 BuildRequires:    R-devel texlive-collection-latex 
 BuildRequires:    R-grDevices 
-BuildRequires:    x11-server-xvfb
 BuildRequires:    cairo-devel
+BuildRequires:    glib2-devel
+BuildRequires:    gtk2-devel
 BuildRequires:    jpeg-devel
 BuildRequires:    tiff-devel
+BuildRequires:    x11-server-xvfb
 
 %description
 Cairo/GTK graphics device driver with output to screen, file (png, svg,
