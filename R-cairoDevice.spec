@@ -3,16 +3,13 @@
 
 Name:             R-%{packname}
 Version:          2.18
-Release:          1
+Release:          2
 Summary:          Cairo-based cross-platform antialiased graphics device driver
 Group:            Sciences/Mathematics
 License:          GPL
 URL:              http://cran.r-project.org/web/packages/cairoDevice/index.html
 Source0:          http://cran.r-project.org/src/contrib/Archive/cairoDevice/cairoDevice_2.18.tar.gz
-
-%rename R-cran-Cairo
 Requires:         R-grDevices 
-
 BuildRequires:    R-devel texlive-collection-latex 
 BuildRequires:    R-grDevices 
 BuildRequires:    cairo-devel
@@ -21,6 +18,7 @@ BuildRequires:    gtk2-devel
 BuildRequires:    jpeg-devel
 BuildRequires:    tiff-devel
 BuildRequires:    x11-server-xvfb
+%rename R-cran-cairoDevice
 
 %description
 Cairo/GTK graphics device driver with output to screen, file (png, svg,
