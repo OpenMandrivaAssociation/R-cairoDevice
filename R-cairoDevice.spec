@@ -13,7 +13,7 @@ Source0:          http://cran.r-project.org/src/contrib/Archive/cairoDevice/cair
 %rename R-cran-Cairo
 Requires:         R-grDevices 
 
-BuildRequires:    Rmath-devel texlive-collection-latex 
+BuildRequires:    R-devel texlive-collection-latex 
 BuildRequires:    R-grDevices 
 BuildRequires:    x11-server-xvfb
 BuildRequires:    cairo-devel
