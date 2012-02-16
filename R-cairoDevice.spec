@@ -7,7 +7,7 @@ Release:          1
 Summary:          Cairo-based cross-platform antialiased graphics device driver
 Group:            Sciences/Mathematics
 License:          GPL
-URL:              None
+URL:              http://cran.r-project.org/web/packages/cairoDevice/index.html
 Source0:          http://cran.r-project.org/src/contrib/Archive/cairoDevice/cairoDevice_2.18.tar.gz
 
 %rename R-cran-Cairo
