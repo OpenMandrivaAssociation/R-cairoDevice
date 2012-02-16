@@ -35,16 +35,10 @@ getGraphicsEvent().
 %build
 
 %install
-export DISPLAY=:20
-Xvfb :20 -screen 0 1x1x24 -ac&
-echo $! > Xvfb.pid
 mkdir -p %{buildroot}%{rlibdir}
-%{_bindir}/R CMD INSTALL -l %{buildroot}%{rlibdir} %{packname}
+xvfb-run %{_bindir}/R CMD INSTALL -l %{buildroot}%{rlibdir} %{packname}
 test -d %{packname}/src && (cd %{packname}/src; rm -f *.o *.so)
 rm -f %{buildroot}%{rlibdir}/R.css
-kill -9 `cat Xvfb.pid`
-unset DISPLAY
-rm -f Xvfb.pid
 
 %files
 %dir %{rlibdir}/%{packname}
