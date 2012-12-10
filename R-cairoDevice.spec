@@ -48,3 +48,53 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/demo
 %{rlibdir}/%{packname}/help
 %{rlibdir}/%{packname}/libs
+
+
+%changelog
+* Thu Feb 16 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.19-1
++ Revision: 775025
+- Update to latest version
+
+* Thu Feb 16 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.18-2
++ Revision: 774835
+- Do the proper Provides/Obsoletes or previous R packages.
+
+* Thu Feb 16 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.18-1
++ Revision: 774654
+- Rebuild with R2spec.
+- Update and rebuild with R2spec
+
+* Sat Sep 11 2010 Funda Wang <fwang@mandriva.org> 1.4.5-3mdv2011.0
++ Revision: 577196
+- rebuild
+
+* Thu Jan 14 2010 Funda Wang <fwang@mandriva.org> 1.4.5-2mdv2010.1
++ Revision: 491115
+- rebuild for new jpeg
+
+* Fri Dec 25 2009 Jérôme Brenier <incubusss@mandriva.org> 1.4.5-1mdv2010.1
++ Revision: 482226
+- new version 1.4.5
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+
+* Sun Aug 10 2008 Tomasz Pawel Gajc <tpg@mandriva.org> 1.4.3-1mdv2009.0
++ Revision: 270296
+- update to new version 1.4-3
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+    - rebuild
+
+* Fri Feb 29 2008 Tomasz Pawel Gajc <tpg@mandriva.org> 1.3.5-2mdv2008.1
++ Revision: 176956
+- remove requires on libR.so
+
+* Sun Feb 17 2008 Tomasz Pawel Gajc <tpg@mandriva.org> 1.3.5-1mdv2008.1
++ Revision: 169883
+- fix Url
+- add missing buildrequires
+- add source and spec file
+- Created package structure for R-cran-Cairo.
+
