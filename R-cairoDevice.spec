@@ -7,7 +7,7 @@ Release:          3
 Summary:          Cairo-based cross-platform antialiased graphics device driver
 Group:            Sciences/Mathematics
 License:          GPL
-URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
+URL:              https://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/%{packname}_%{version}.tar.gz
 Requires:         R-grDevices 
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex 
